@@ -1,0 +1,15 @@
+export default {
+  async fetch(request) {
+    const html = `<!DOCTYPE html>
+    <body>
+      <h1>DACheyne</h1>
+      <p>Welcome to my WIP portfolio/blog.</p>
+    </body>`;
+
+    return new Response(html, {
+      headers: {
+        "content-type": "text/html;charset=UTF-8",
+      },
+    });
+  },
+};
